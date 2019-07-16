@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-07-15T11:13:04Z" name="Default suite" finished-at="2019-07-15T11:13:05Z" duration-ms="1118">
+    <groups>
+    </groups>
+    <test started-at="2019-07-15T11:13:04Z" name="Default test" finished-at="2019-07-15T11:13:05Z" duration-ms="1118">
+      <class name="ddf.testcases.TestC">
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="41" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=C1, Surname=C2, Runmode=R1, Address2=Ad2, RollNumber=C3, Address1=Ad1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC1 -->
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=C11, Surname=C12, Runmode=R2, Address2=Ad2, RollNumber=C13, Address1=Ad1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC1 -->
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=C21, Surname=C22, Runmode=R2, Address2=Ad2, RollNumber=C23, Address1=Ad1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC1 -->
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=C31, Surname=C32, Runmode=R3, Address2=Ad2, RollNumber=C33, Address1=Ad1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC1 -->
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=C41, Surname=C42, Runmode=R4, Address2=Ad2, RollNumber=C43, Address1=Ad1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC1 -->
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=C51, Surname=C52, Runmode=R4, Address2=Ad2, RollNumber=C53, Address1=Ad1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC1 -->
+      </class> <!-- ddf.testcases.TestC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
