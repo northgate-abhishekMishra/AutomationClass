@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test name="Test1">
+	<parameter name="sheetName" value="TestData"></parameter>
+	<test name="TestA">
+		<parameter name="TestCaseName" value="TestA"></parameter>
 		<classes>
 			<class name="ddf.testcases.TestA">
 				<methods>
-					<include name="TestA1"></include>
+					<include name="TestA2"></include>
 				</methods>
 			</class>
 		</classes>
-
-	</test> <!-- Test -->
-
-	<test  name="Test2" >
+	</test>
+	<test name="TestB">
+		<parameter name="TestCaseName" value="TestB"></parameter>
 		<classes>
 			<class name="ddf.testcases.TestB"></class>
 		</classes>
 	</test>
-
-	<test name="Test33">
+	<test name="TestC">
+		<parameter name="TestCaseName" value="TestC"></parameter>
 		<classes>
-			<class name="ddf.testcases.TestC"></class>
+			<class name="ddf.testcases.TestC">
+			</class>
 		</classes>
 	</test>
-
-
-</suite> <!-- Suite -->
+</suite>

@@ -1,79 +1,412 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="2" total="11" passed="1" failed="0" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-15T11:13:04Z" name="Default suite" finished-at="2019-07-15T11:13:05Z" duration-ms="1118">
+  <suite started-at="2019-07-21T06:33:23Z" name="Suite" finished-at="2019-07-21T06:33:26Z" duration-ms="2757">
     <groups>
     </groups>
-    <test started-at="2019-07-15T11:13:04Z" name="Default test" finished-at="2019-07-15T11:13:05Z" duration-ms="1118">
+    <test started-at="2019-07-21T06:33:23Z" name="TestA" finished-at="2019-07-21T06:33:25Z" duration-ms="1551">
+      <class name="ddf.testcases.TestA">
+        <test-method signature="TestA2(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestA@63070bab]" started-at="2019-07-21T06:33:25Z" name="TestA2" data-provider="getData" finished-at="2019-07-21T06:33:25Z" duration-ms="33" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=Abhishek, Surname=Mukherji, Runmode=Execute, RollNo=R1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA2 -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ddf.testcases.TestA@63070bab]" started-at="2019-07-21T06:33:25Z" name="quit" finished-at="2019-07-21T06:33:25Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- ddf.testcases.TestA -->
+    </test> <!-- TestA -->
+    <test started-at="2019-07-21T06:33:25Z" name="TestB" finished-at="2019-07-21T06:33:25Z" duration-ms="387">
+      <class name="ddf.testcases.TestB">
+        <test-method signature="TestB(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestB@484970b0]" started-at="2019-07-21T06:33:25Z" name="TestB" data-provider="getData" finished-at="2019-07-21T06:33:25Z" duration-ms="119" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=C1, Surname=C2, Runmode=Yes, RollNumber=C7}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped as mentione in excel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped as mentione in excel
+at ddf.base.Check_TestSkip.skip(Check_TestSkip.java:19)
+at ddf.testcases.TestB.TestB(TestB.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestB -->
+        <test-method signature="TestB(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestB@484970b0]" started-at="2019-07-21T06:33:25Z" name="TestB" data-provider="getData" finished-at="2019-07-21T06:33:25Z" duration-ms="125" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=C11, Surname=C22, Runmode=No, RollNumber=C8}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped as mentione in excel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped as mentione in excel
+at ddf.base.Check_TestSkip.skip(Check_TestSkip.java:19)
+at ddf.testcases.TestB.TestB(TestB.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestB -->
+      </class> <!-- ddf.testcases.TestB -->
+    </test> <!-- TestB -->
+    <test started-at="2019-07-21T06:33:25Z" name="TestC" finished-at="2019-07-21T06:33:26Z" duration-ms="704">
       <class name="ddf.testcases.TestC">
-        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="41" status="PASS">
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@1018bde2]" started-at="2019-07-21T06:33:25Z" name="TestC1" data-provider="getData" finished-at="2019-07-21T06:33:25Z" duration-ms="89" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=C1, Surname=C2, Runmode=R1, Address2=Ad2, RollNumber=C3, Address1=Ad1}]]>
+                <![CDATA[{Name=C1, Surname=C2, Runmode=R1, Address2=Ad2, RollNumber=C3, Address1=Ad1, Address=Thane}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped as mentione in excel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped as mentione in excel
+at ddf.base.Check_TestSkip.skip(Check_TestSkip.java:19)
+at ddf.testcases.TestC.TestC1(TestC.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC1 -->
-        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="6" status="PASS">
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@1018bde2]" started-at="2019-07-21T06:33:25Z" name="TestC1" data-provider="getData" finished-at="2019-07-21T06:33:25Z" duration-ms="73" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=C11, Surname=C12, Runmode=R2, Address2=Ad2, RollNumber=C13, Address1=Ad1}]]>
+                <![CDATA[{Name=C11, Surname=C12, Runmode=R2, Address2=Ad2, RollNumber=C13, Address1=Ad1, Address=Thane}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped as mentione in excel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped as mentione in excel
+at ddf.base.Check_TestSkip.skip(Check_TestSkip.java:19)
+at ddf.testcases.TestC.TestC1(TestC.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC1 -->
-        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="4" status="PASS">
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@1018bde2]" started-at="2019-07-21T06:33:25Z" name="TestC1" data-provider="getData" finished-at="2019-07-21T06:33:25Z" duration-ms="94" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=C21, Surname=C22, Runmode=R2, Address2=Ad2, RollNumber=C23, Address1=Ad1}]]>
+                <![CDATA[{Name=C21, Surname=C22, Runmode=R2, Address2=Ad2, RollNumber=C23, Address1=Ad1, Address=Thane}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped as mentione in excel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped as mentione in excel
+at ddf.base.Check_TestSkip.skip(Check_TestSkip.java:19)
+at ddf.testcases.TestC.TestC1(TestC.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC1 -->
-        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="12" status="PASS">
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@1018bde2]" started-at="2019-07-21T06:33:25Z" name="TestC1" data-provider="getData" finished-at="2019-07-21T06:33:26Z" duration-ms="123" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=C31, Surname=C32, Runmode=R3, Address2=Ad2, RollNumber=C33, Address1=Ad1}]]>
+                <![CDATA[{Name=C31, Surname=C32, Runmode=R3, Address2=Ad2, RollNumber=C33, Address1=Ad1, Address=Thane}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped as mentione in excel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped as mentione in excel
+at ddf.base.Check_TestSkip.skip(Check_TestSkip.java:19)
+at ddf.testcases.TestC.TestC1(TestC.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC1 -->
-        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="7" status="PASS">
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@1018bde2]" started-at="2019-07-21T06:33:26Z" name="TestC1" data-provider="getData" finished-at="2019-07-21T06:33:26Z" duration-ms="88" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=C41, Surname=C42, Runmode=R4, Address2=Ad2, RollNumber=C43, Address1=Ad1}]]>
+                <![CDATA[{Name=C41, Surname=C42, Runmode=R4, Address2=Ad2, RollNumber=C43, Address1=Ad1, Address=Thane}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped as mentione in excel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped as mentione in excel
+at ddf.base.Check_TestSkip.skip(Check_TestSkip.java:19)
+at ddf.testcases.TestC.TestC1(TestC.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC1 -->
-        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@4961f6af]" started-at="2019-07-15T11:13:05Z" name="TestC1" data-provider="getData" finished-at="2019-07-15T11:13:05Z" duration-ms="9" status="PASS">
+        <test-method signature="TestC1(java.util.Hashtable)[pri:0, instance:ddf.testcases.TestC@1018bde2]" started-at="2019-07-21T06:33:26Z" name="TestC1" data-provider="getData" finished-at="2019-07-21T06:33:26Z" duration-ms="131" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=C51, Surname=C52, Runmode=R4, Address2=Ad2, RollNumber=C53, Address1=Ad1}]]>
+                <![CDATA[{Name=C51, Surname=C52, Runmode=R4, Address2=Ad2, RollNumber=C53, Address1=Ad1, Address=Thane}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped as mentione in excel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped as mentione in excel
+at ddf.base.Check_TestSkip.skip(Check_TestSkip.java:19)
+at ddf.testcases.TestC.TestC1(TestC.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC1 -->
       </class> <!-- ddf.testcases.TestC -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TestC -->
+  </suite> <!-- Suite -->
 </testng-results>

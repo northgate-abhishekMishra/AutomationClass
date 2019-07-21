@@ -1,9 +1,12 @@
 package ddf.testcases;
 
+import java.util.Hashtable;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import ddf.base.BaseTest_Class;
+import ddf.base.DataProviderClass;
 
 public class TestA extends BaseTest_Class{
 
@@ -13,9 +16,10 @@ public class TestA extends BaseTest_Class{
 		navigate();
 	}
 
-	@Test(priority = 2, testName = "A2")
+//	@Test(priority = 2, testName = "A2")
 //	@Test(priority = 2, testName="A2",dependsOnMethods = { "TestA1" })
-	public void TestA2() {
+	@Test(dataProvider="getData",dataProviderClass=DataProviderClass.class)
+	public void TestA2(Hashtable<String, String> hashtable) {
 		// inherited from BaseTest
 	}
 

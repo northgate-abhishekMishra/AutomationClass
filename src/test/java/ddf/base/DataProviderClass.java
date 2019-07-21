@@ -2,16 +2,17 @@ package ddf.base;
 
 import java.util.Hashtable;
 
+import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
 
 public class DataProviderClass {
 
 	@DataProvider
-	public Object[][] getData() {
-
+	public Object[][] getData(ITestContext context) {
+		
 		XLS_POI datatable = new XLS_POI(System.getProperty("user.dir") + "\\src\\test\\resources\\TestData.xlsx");
-		String sheetName = "Sheet1";
-		String testcasename = "Hybrid";
+		String sheetName = context.getCurrentXmlTest().getParameter("sheetName");
+		String testcasename = context.getCurrentXmlTest().getParameter("TestCaseName");
 		int testColumnCount = 0;
 		int rowHeaderNumber = 0;
 		int testDataStartNumber = 0;
@@ -19,6 +20,7 @@ public class DataProviderClass {
 		int testDataRowNumbers = 0;
 		int totalRowCount = datatable.getRowCount(sheetName);
 
+		
 		for (int i = 0; i < totalRowCount; i++) {
 			if (datatable.getCellData(sheetName, i, 1).equalsIgnoreCase(testcasename)) {
 				rowHeaderNumber = i + 1;

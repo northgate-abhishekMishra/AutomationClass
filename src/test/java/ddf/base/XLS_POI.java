@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-class XLS_POI {
+public class XLS_POI {
 	public String excel_path;
 	public FileInputStream fis = null;
 	public FileOutputStream fos = null;
